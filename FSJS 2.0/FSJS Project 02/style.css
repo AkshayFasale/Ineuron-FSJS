@@ -1,2 +1,95 @@
-/* You can not modify anything in the HTML */
-/* You can only modify the CSS file */
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 10vh;
+    background-color: #000000;
+    padding: 0 5%;
+
+}
+
+.line {
+    width: 2px;
+    margin: 0 3%;
+    height: 50px;
+    background-color: #ffffff;
+}
+
+.grow-list {
+    display: flex;
+    flex: 1;
+}
+
+.list {
+    display: flex;
+    list-style-type: none;
+}
+
+.list-item {
+    font-family: 'Poppins';
+    color: #ffffff;
+    padding: 0 20px;
+    font-weight: 500;
+}
+
+
+
+.button-small {
+    border: none;
+    background-color: #ba0cc5;
+    color: #ffffff;
+    text-align: center;
+    font-size: 15px;
+    padding: 8px 25px;
+    font-family: "Poppins";
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.hero {
+    height: 90vh;
+    background-image: url(./assets/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-heading {
+    position: absolute;
+    top: 30%;
+    text-align: center;
+    width: 100%;
+    font-family: 'Montserrat';
+    font-size: 80px;
+    color: #ffffff;
+}
+
+.hero-description {
+    position: absolute;
+    top: 58%;
+    text-align: center;
+    width: 100%;
+    font-family: 'Montserrat';
+    font-size: 28px;
+    color: #ffffff;
+}
+
+.button-large {
+    position: absolute;
+    bottom: 27%;
+    left: 40%;
+    background-color: #ba0cc5;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'poppins';
+    font-size: 25px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+}
