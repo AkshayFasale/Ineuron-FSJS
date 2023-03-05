@@ -48,33 +48,40 @@ body {
 .banner-container>div>img {
     position: absolute;
     right: 0;
-    bottom: 10%;
+    bottom: 0%;
     height: 600px;
 }
-
+.banner-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 1rem;
+    gap: 1.5rem;
+}
 .heading-text {
-    position: absolute;
+ 
     margin: 0 5%;
     font-size: 50px;
     font-family: 'poppins';
     font-weight: 500;
-    top: 25%;
+
 }
 
 .description {
-    position: absolute;
+
     margin: 0 5%;
     font-size: 15px;
     font-family: 'poppins';
     top: 54%;
     font-weight: 500;
-    color: #808080;
+
 }
 
 .btn {
-    position: absolute;
+  
     margin: 0 5%;
-    bottom: 27%;
+ 
     padding: 20px 40px;
     font-size: 16px;
     font-family: "Poppins";
@@ -84,3 +91,8 @@ body {
 span {
     color: #7475da;
 }
+
+/* .poster{
+    position: absolute;
+    height: 10%;
+} */
