@@ -1,0 +1,144 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+main {
+    background-image: url(./Photos/mainBackground.png);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: poppins;
+}
+
+:root {
+    --color-blue-001: #6663e9;
+    --color-blue-002: #7d7bec;
+    --color-blue-003: #6663e8;
+    --color-grey-001: #a9aeb6;
+    --color-black-001: #181717;
+    --color-black-002: #27292e;
+    --color-black-003: #717377;
+    --color-black-004: #18171796;
+    --color-white-001: #ffffff;
+    --color-white-002: #cacaca;
+    --color-white-003: #f5f7f9;
+    --color-green-001: #3b802d;
+    --color-red-001: #ca2121;
+}
+
+main::before {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.499);
+    content: " ";
+
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 8rem;
+}
+
+.logo {
+    width: 12%;
+    min-width: 100px;
+    cursor: pointer;
+    position: relative;
+}
+
+#menu-icon {
+    display: none;
+    width: 25px;
+    cursor: pointer;
+}
+
+.list {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.list-items {
+    list-style-type: none;
+    color: var(--color-white-001);
+    font-family: poppins;
+    font-size: 16px;
+}
+
+hr {
+    width: 90%;
+    position: relative;
+    /* margin-left: 70px; */
+    margin: 0 auto;
+}
+
+.container-items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-left: 5rem;
+    margin-top: 2rem;
+}
+
+.container-items .heading {
+    position: relative;
+    color: var(--color-white-001);
+    font-size: 4rem;
+}
+
+.container-items .sub-heading {
+    position: relative;
+    color: var(--color-white-002);
+    font-size: 1rem;
+}
+
+.container-items button {
+    padding: 1rem 2rem;
+    color: var(--white);
+    position: relative;
+    background-color: var(--color-blue-001);
+    border: none;
+    border-radius: 3rem;
+    color: var(--color-white-001);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.container-logo {
+    width: 100%;
+}
+
+.logo-section {
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem;
+    /* background-color: var(--color-white-001); */
+    background-color: var(--color-white-001);
+    translate: 0rem 7rem;
+    width: 80%;
+    border-radius: 1rem;
+
+
+}
+
+/* 
+
+/* Cards section */
+
+
+/* Media Queries */
+
+@media only screen and(max-width:768px) {
+    navbar {
+        display: block;
+    }
+}
