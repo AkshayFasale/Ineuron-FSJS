@@ -1,6 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
+
 }
 
 main {
@@ -23,7 +24,7 @@ main {
     --color-black-004: #18171796;
     --color-white-001: #ffffff;
     --color-white-002: #cacaca;
-    --color-white-003: #f5f7f9;
+    --color-white-003: #f3f5f6;
     --color-green-001: #3b802d;
     --color-red-001: #ca2121;
 }
@@ -130,10 +131,102 @@ hr {
 
 }
 
+/* Cards */
 /* 
 
 /* Cards section */
+.cards-section {
+    background-color: var(--color-white-003);
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10rem;
+}
 
+.cards-heading-container {
+    margin: 0 auto;
+}
+
+.cards-heading {
+    /* margin: 0 auto; */
+    padding-top: 12rem;
+    text-align: center;
+    font-family: poppins;
+    font-size: 3rem;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.cards-row1 {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+}
+
+.card1-row {
+    background-image: url(./Photos/cardImage1.png);
+    width: 25%;
+    height: 380px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1rem;
+
+}
+
+.card2-row {
+    background-image: url(./Photos/cardImage2.png);
+    width: 25%;
+    height: 380px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1rem;
+    margin-top: 1.5rem;
+}
+
+.card3-row {
+    background-image: url(./Photos/cardImage3.png);
+    width: 25%;
+    height: 380px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1rem;
+    margin-top: 3rem;
+}
+
+.card-info {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    gap: 1rem;
+    align-items: center;
+    background-color: var(--color-white-001);
+    margin: 1rem;
+    border-radius: 1rem;
+    translate: 0px 320px;
+}
+
+.card-name {
+    font-size: 1.5rem;
+    font-family: manrope;
+}
+
+.card-price {
+    font-family: manrope;
+    color: var(--color-blue-001);
+}
+
+.card-info-right>button {
+    padding: 1rem 2.5rem;
+    font-size: 1rem;
+    font-family: poppins;
+    border-radius: 40px;
+    border: none;
+    background-color: var(--color-blue-001);
+    color: var(--color-white-001);
+}
 
 /* Media Queries */
 
