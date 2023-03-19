@@ -105,7 +105,7 @@ nav {
     color: var(--color-white-001);
     font-size: 0.9rem;
     position: relative;
-   
+
 }
 
 nav>ul .list_items>a::before {
@@ -128,5 +128,93 @@ nav>ul .list_items>a::before {
 }
 
 .list_items>a:hover::before {
+    transform: scaleX(1);
+}
+
+/* ********************* Headphones container ********************** */
+
+.headphones-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.container-left {
+    width: 50%;
+
+}
+
+.headphone-img>img {
+    position: relative;
+    left: 17rem;
+    top: -10rem;
+}
+
+.headphone-img>img:hover {
+    transform: scaleX(1);
+}
+
+.container-right {
+    width: 55%;
+}
+
+.headphone-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.onear-img {
+    margin-left: 3rem;
+}
+
+.heading {
+    font-size: 3rem;
+}
+
+.headphone-info>.beats-info {
+    width: 50%;
+    font-family: manrope;
+    font-weight: lighter;
+}
+
+.btn_primary {
+    all: unset;
+    padding: 1em 3.2em;
+    background-color: var(--color-black-002);
+    font-size: 0.9rem;
+    font-family: sans-serif;
+    border-radius: 7px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.btn_primary>span{
+    font-size: 1.2rem;
+}
+
+.btn_primary::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: var(--color-yellow-001);
+    border-radius: 7px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 350ms ease-in-out;
+    z-index: -1;
+}
+
+.btn_primary:hover::before {
     transform: scaleX(1);
 }
