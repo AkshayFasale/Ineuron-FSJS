@@ -1,0 +1,45 @@
+/**********************************CSS Reset******************************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/************************Declaring CSS Variables*************************/
+
+:root {
+    --color-black-000: #000000;
+    --color-black-001: #0f0f10;
+    --color-black-002: #1e1e21;
+    --color-black-003: #181a1b;
+    --color-white-001: #f2f2f3;
+    --color-white-002: #505153;
+    --color-crimson-001: #ff0f32;
+    --color-red-001: #b8081c;
+    --color-yellow-001: #944e0d;
+    --color-blue-001: #001335;
+    --color-twilight-grey-001: #d0b094;
+}
+
+body {
+    background-color: var(--color-black-000);
+    width: 100%;
+}
+
+/* ************************ Navbar ******************************** */
+.main {
+
+    
+}
+
+.nav {}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+    border: 2px wheat solid;
+
+}
