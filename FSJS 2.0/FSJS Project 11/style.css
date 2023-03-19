@@ -26,20 +26,109 @@ body {
     width: 100%;
 }
 
-/* ************************ Navbar ******************************** */
-.main {
-
-    
+.ear-logo {
+    width: 25px;
 }
 
-.nav {}
+.btn-primary {
+    all: unset;
+    padding: 1em 3.2em;
+    background-color: var(--color-black-002);
+    font-size: 0.9rem;
+    font-family: sans-serif;
+    border-radius: 7px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.btn-primary::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: var(--color-yellow-001);
+    border-radius: 7px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 350ms ease-in-out;
+    z-index: -1;
+}
+
+.btn-primary:hover::before {
+    transform: scaleX(1);
+}
+
+/* ************************ Navbar ******************************** */
+main {
+    /* width: 100%; */
+}
+
+body {
+    width: 100%;
+    max-width: 1440px;
     margin: 0 auto;
-    width: 80%;
-    border: 2px wheat solid;
+    font-family: "Manrope", sans-serif;
+    color: var(--color-white-001);
+    overflow-x: hidden;
+}
 
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5em;
+    padding: 1em 0em;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 5em;
+}
+
+.navbar>ul {
+    display: flex;
+    gap: 4rem;
+}
+
+.list_items {
+    list-style-type: none;
+
+}
+
+.list_items>a {
+    text-decoration: none;
+    color: var(--color-white-001);
+    font-size: 0.9rem;
+    position: relative;
+   
+}
+
+nav>ul .list_items>a::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: var(--color-white-002);
+    left: 0;
+    top: 1.5rem;
+    right: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 350ms ease-in-out;
+}
+
+.list_items>a:hover {
+    color: var(--color-white-002);
+}
+
+.list_items>a:hover::before {
+    transform: scaleX(1);
 }
