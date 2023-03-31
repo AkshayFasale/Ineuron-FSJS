@@ -24,6 +24,7 @@
 body {
     background-color: var(--color-black-000);
     width: 100%;
+
 }
 
 .ear-logo {
@@ -194,7 +195,8 @@ nav>ul .list_items>a::before {
     align-items: center;
     gap: 1rem;
 }
-.btn_primary>span{
+
+.btn_primary>span {
     font-size: 1.2rem;
 }
 
@@ -217,4 +219,26 @@ nav>ul .list_items>a::before {
 
 .btn_primary:hover::before {
     transform: scaleX(1);
+}
+
+/* ************************ Logo section ********************************  */
+
+.logo-section {
+    width: 100%;
+    padding: 0rem 10rem;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo-trans>img {
+    transition: transform .2s;
+
+}
+
+.logo-trans>img:hover {
+    transform: scale(1.1);
 }
