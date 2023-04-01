@@ -25,6 +25,7 @@ body {
     background-color: var(--color-black-000);
     width: 100%;
 
+
 }
 
 .ear-logo {
@@ -242,3 +243,51 @@ nav>ul .list_items>a::before {
 .logo-trans>img:hover {
     transform: scale(1.1);
 }
+
+/* ****************************Spects Section*************************** */
+.Spects {
+    width: 100%;
+    padding: 5rem 15rem;
+    margin: 0 auto;
+
+}
+
+.spects-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 2rem;
+}
+
+.specs-info-container {
+    padding: 2rem;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 4rem;
+    /* border: 1px red solid; */
+}
+
+.specs-info-left {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.specs-Battery {
+    margin-left: -2rem;
+}
+
+.specs-Load {
+    margin-left: -1.7rem;
+}
+.specThird>h3{
+    font-size: 1.3rem;
+}
+.specThird>p{
+    font-size: .8rem;
+    color: var(--color-white-002);
+}
+
+/*  */
