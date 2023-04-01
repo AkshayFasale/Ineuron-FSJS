@@ -282,12 +282,60 @@ nav>ul .list_items>a::before {
 .specs-Load {
     margin-left: -1.7rem;
 }
-.specThird>h3{
+
+.specThird>h3 {
     font-size: 1.3rem;
 }
-.specThird>p{
+
+.specThird>p {
     font-size: .8rem;
     color: var(--color-white-002);
 }
 
-/*  */
+/************** Case ***************/
+
+.Case {
+    width: 100%;
+    position: relative;
+    padding: 3rem 5rem;
+
+}
+
+.case-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 2rem;
+}
+
+.case-main {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.case-top>img {
+    width: 100%;
+    max-width: 250px;
+    min-width: 110px;
+}
+
+.case-right>p {
+    font-size: .9rem;
+    color: var(--color-white-001);
+    line-height: 1.7rem;
+}
+
+.case-right>.btn_primary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding: 1em 1.7em;
+    margin-top: 1rem;
+}
+
+.case-right>.btn_primary>img {
+    width: 20px;
+}
