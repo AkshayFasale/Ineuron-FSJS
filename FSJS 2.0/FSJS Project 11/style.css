@@ -176,10 +176,16 @@ nav>ul .list_items>a::before {
     font-size: 3rem;
 }
 
+.headphone-info>p {
+    font-size: 1.3rem;
+}
+
 .headphone-info>.beats-info {
     width: 50%;
     font-family: manrope;
-    font-weight: lighter;
+    /* font-weight: lighter; */
+    font-size: .9rem;
+    line-height: 1.9rem;
 }
 
 .btn_primary {
@@ -290,6 +296,14 @@ nav>ul .list_items>a::before {
 .specThird>p {
     font-size: .8rem;
     color: var(--color-white-002);
+}
+
+.specs-img>img {
+    transition: scale 350ms ease-in-out;
+}
+
+.specs-img>img:hover {
+    scale: 3.4;
 }
 
 /************** Case ***************/
@@ -515,4 +529,102 @@ nav>ul .list_items>a::before {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* Footer */
+
+footer {
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8em;
+    padding: 3em 2em;
+    flex-wrap: wrap;
+}
+
+footer> :first-child {
+    align-self: flex-start;
+}
+
+.footer_links_container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.footer_links_container>.heading_primary {
+    font-size: 0.9rem;
+}
+
+.footer_links_container>ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.footer_links_container>ul>li>a {
+    color: var(--color-white-002);
+}
+
+.footer_links_container>ul>li>a:hover {
+    color: var(--color-white-001);
+}
+
+.footer_links_container>ul>li>a:hover ::before {
+    transform: scaleX(0);
+}
+
+.footer_right_content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.footer_right_content>form {
+    background-color: var(--color-black-003);
+    padding: 0.61em 1em;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7em;
+}
+
+.footer_right_content>form>input {
+    all: unset;
+    background-color: var(--color-black-003);
+    font-size: 0.9rem;
+    width: 100%;
+}
+
+.footer_right_content>form>input:focus {
+    outline: none;
+}
+
+.footer_right_content>form>input::placeholder {
+    font-size: 0.8rem;
+}
+
+.footer_right_content>form>.btn_primary {
+    background-color: var(--color-black-000);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6em;
+    padding: 1em 1.2em;
+}
+
+.social_media_icons {
+    display: flex;
+    gap: 0.8em;
+}
+
+.social_media_icons>a {
+    transition: scale 350ms ease-in-out;
+}
+
+.social_media_icons>a:hover {
+    scale: 1.3;
 }
