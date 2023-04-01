@@ -339,13 +339,15 @@ nav>ul .list_items>a::before {
 .case-right>.btn_primary>img {
     width: 20px;
 }
+
 /* ******************** Immesnse*********************** */
 
-.immense{
+.immense {
     width: 100%;
     padding: 1rem;
 }
-.immense-section{
+
+.immense-section {
     width: 60%;
     /* padding: 5rem; */
     /* display: flex; */
@@ -353,7 +355,8 @@ nav>ul .list_items>a::before {
     justify-content: center; */
     margin: 0 auto;
 }
-.immense-container{
+
+.immense-container {
     padding: 2rem;
     width: 100%;
     display: flex;
@@ -365,19 +368,151 @@ nav>ul .list_items>a::before {
     /* border: 1px red solid; */
 }
 
-.immense-left{
+.immense-left {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 1rem;    
+    gap: 1rem;
 }
 
-.btn-im{
+.btn-im {
     background-color: var(--color-black-000);
 }
-.immense-right>img{
+
+.immense-right>img {
     width: 90%;
     min-width: 50%;
+}
 
+.style {
+    padding: 5rem 0rem;
+
+}
+
+.style-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    gap: 6em;
+}
+
+.style-top>img {
+    width: 100%;
+}
+
+.style-main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 4em;
+    flex-wrap: wrap;
+    width: 50%;
+    min-width: 650px;
+    /* border: 1px solid green; */
+
+}
+
+.card {
+    /* border: 1px solid green; */
+    padding: 4em 5em;
+    background-color: var(--color-black-003);
+    border-radius: 7px;
+    position: relative;
+    margin: 2em 0;
+    cursor: pointer;
+    transition: scale 350ms ease-in-out;
+}
+
+.card:hover {
+    scale: 1.3;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    background-image: url(./Photos/black.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100px;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    top: -50%;
+    bottom: 0;
+    z-index: 2;
+}
+
+.style-main>.card_2::before {
+    background-image: url(./Photos/redBlack.png);
+}
+
+.style-main>.card_3::before {
+    background-image: url(./Photos/nightBlack.png);
+}
+
+.style-main>.card_4::before {
+    background-image: url(./Photos/blue.png);
+}
+
+.style-main>.card_5::before {
+    background-image: url(./Photos/twilightGray.png);
+}
+
+.style-main>.card_1:hover {
+    background-color: var(--color-black-000);
+}
+
+.style-main>.card_2:hover {
+    background-color: var(--color-red-001);
+}
+
+.style-main>.card_3:hover {
+    background-color: var(--color-yellow-001);
+}
+
+.style-main>.card_4:hover {
+    background-color: var(--color-blue-001);
+}
+
+.style-main>.card_5:hover {
+    background-color: var(--color-twilight-grey-001);
+}
+
+.style-main>.card_2:hover .model> :nth-child(1) {
+    color: black;
+}
+
+.card_bottom {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    /* border: 1px solid yellow; */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0.5em;
+}
+
+.model>p {
+    font-size: 0.7rem;
+    padding: 0.2em 0;
+}
+
+.model> :nth-child(2) {
+    color: var(--color-white-002);
+}
+
+.shopping_icon {
+    background-color: var(--color-black-000);
+    padding: 0.4em 0.6em;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
