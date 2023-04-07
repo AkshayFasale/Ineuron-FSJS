@@ -17,3 +17,36 @@
   --color-cyan-001: #b3c3c3;
   --color-cyan-002: #c6c5e06c;
 }
+
+body {
+  width: 100vw;
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: "Metrophobic", sans-serif;
+  color: var(--color-black-001);
+  overflow-x: hidden;
+}
+
+/************ Navbar ************/
+.navbar{
+    padding: 2rem 0rem;
+}
+.nav>a>img{
+    width: 100px;
+    cursor: pointer;
+}
+.nav{
+    display: flex;
+    border: 2px red solid;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.list{
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+    
+}
