@@ -1,0 +1,19 @@
+/******* CSS Reset ******/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* root variable for color */
+:root {
+  --color-white-001: #feffff;
+  --color-skyblue-001: #e4f2ff;
+  --color-black-001: #000000;
+  --color-purple-001: #722ed1;
+  --color-purple-002: #2b1e3f;
+  --color-grey-001: #88888a;
+  --color-grey-002: #dedce0;
+  --color-grey-003: #3a3838;
+  --color-cyan-001: #b3c3c3;
+  --color-cyan-002: #c6c5e06c;
+}
