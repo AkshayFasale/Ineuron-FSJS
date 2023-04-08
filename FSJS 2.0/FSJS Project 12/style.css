@@ -47,6 +47,12 @@ body {
 .list{
     display: flex;
     list-style-type: none;
-    gap: 1rem;
+    gap: 3rem;
     
+}
+
+.main-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
