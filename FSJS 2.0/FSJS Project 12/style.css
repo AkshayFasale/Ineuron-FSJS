@@ -26,7 +26,30 @@ body {
   color: var(--color-black-001);
   overflow-x: hidden;
 }
+/* utilities */
 
+.btn-primary{
+    /* font-family: "Metrophobic", sans-serif; */
+    background: transparent;
+    border: 1px solid;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    outline: 1px solid var(--color-purple-001);
+    color: var(--color-purple-001);
+    cursor: pointer;
+    transition: all 350ms ease-in-out;
+}
+.btn-primary:hover {
+  color: var(--color-white-001);
+  background-color: var(--color-purple-001);
+  /* outline: none; */
+}
+.btn-primary:hover::before{
+    transform: scaleX(3);
+}
+.btn-primary::before{
+
+}
 /************ Navbar ************/
 .navbar{
     padding: 2rem 0rem;
@@ -37,7 +60,7 @@ body {
 }
 .nav{
     display: flex;
-    border: 2px red solid;
+    /* border: 2px red solid; */
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
