@@ -139,4 +139,53 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    padding: 1rem 12rem;
+}
+
+
+.main-left-container {
+    border: 1px red solid;
+    width: 100%;
+    
+}
+
+.left-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    width: 100%;
+}
+
+.left-links {
+    padding: .1rem;
+    border-radius: 1rem;
+}
+
+.version {
+    text-decoration: none;
+}
+
+.left-links>a {
+    /* text-decoration: none; */
+    color: var(--color-purple-001)
+}
+
+.main-right-container {
+width: 100%;
+    border: 1px red solid;
+}
+.learn-more-btn{
+    border: none;
+}
+.free-trial-btn {
+    background-color: var(--color-purple-001);
+    color: var(--color-white-001);
+    transition: all 350ms ease-in-out;
+}
+
+.free-trial-btn:hover {
+    color: var(--color-purple-001);
+    background-color: var(--color-white-001);
 }
