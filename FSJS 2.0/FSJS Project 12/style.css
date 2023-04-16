@@ -135,6 +135,23 @@ body {
     transform: scaleX(1);
 }
 
+/* main container */
+.main-container ::before {
+    content: "";
+    position: absolute;
+    background: linear-gradient(to bottom,
+            var(--color-white-001),
+            var(--color-skyblue-001));
+    height: 95%;
+    width: 100%;
+    z-index: -2;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    transform: rotate(-5deg);
+}
+
 .main-container {
     display: flex;
     align-items: center;
@@ -147,7 +164,7 @@ body {
 .main-left-container {
     border: 1px red solid;
     width: 100%;
-    
+
 }
 
 .left-container {
@@ -173,12 +190,14 @@ body {
 }
 
 .main-right-container {
-width: 100%;
+    width: 100%;
     border: 1px red solid;
 }
-.learn-more-btn{
+
+.learn-more-btn {
     border: none;
 }
+
 .free-trial-btn {
     background-color: var(--color-purple-001);
     color: var(--color-white-001);
