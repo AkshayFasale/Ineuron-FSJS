@@ -292,6 +292,10 @@ body {
     align-items: center;
     gap: 4em;
     flex-wrap: wrap;
+    border: 2px red solid;
+}
+.left-slack{
+    border: 1px solid green;
 }
 
     .right-slack {
