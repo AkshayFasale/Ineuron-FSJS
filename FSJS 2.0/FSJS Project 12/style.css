@@ -287,31 +287,37 @@ body {
 
 .best-slack-section {
     padding: 4em 0em;
-    display: flex;
+    /* display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 4em;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
     /* border: 2px red solid; */
 }
-.slack-section{
+
+.slack-section, .data-section {
     display: flex;
     align-items: center;
-   margin: 0 auto;
+    margin: 0 auto;
     gap: 4rem;
     width: 70%;
     /* border: 2px red solid; */
 }
-.left-slack{
+
+.left-slack, .right-data {
     /* border: 1px solid green; */
-    max-width: 100%;
+    
 }
 
-    .right-slack {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        width: 50%;
-        gap: 1.6rem;
-        /* border: 1px blue solid; */
-    }
+.right-slack, .left-data {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 1.6rem;
+    /* border: 1px blue solid; */
+}
+.data-section>.right-data{
+    /* border: 2px red solid; */
+    width: 50%;
+}
