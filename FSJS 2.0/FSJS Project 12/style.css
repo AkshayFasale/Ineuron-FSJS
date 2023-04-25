@@ -304,21 +304,54 @@ body {
     /* border: 2px red solid; */
 }
 
-.left-slack, .right-data {
-    /* border: 1px solid green; */
-    
+
+
+.data-section>.right-data {
+    /* border: 2px red solid; */
+    width: 55%;
+
 }
 
-.right-slack, .left-data {
+/* Review section */
+
+
+.review-container {
+    margin-top: 3rem;
+    padding-block: 6rem;
+    background: linear-gradient(50deg, var(--color-white-001) 20%, var(--color-skyblue-001) 80%);
+}
+
+.review {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    gap: 1.6rem;
-    /* border: 1px blue solid; */
+    align-items: center;
+    gap: 1.5rem;
 }
-.data-section>.right-data{
-    /* border: 2px red solid; */
-    width: 40%;
 
+.review-heading {
+    font-size: 1.8rem;
+    text-align: center;
+    color: var(--color-grey-003);
+    font-weight: 500;
+}
+
+.reviewer-info>p {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 800;
+}
+
+/* .line{
+    width: 60%;
+    height: 1px;
+    background-color: var(--color-purple-002);
+} */
+
+.logo-section {
+    padding-block: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+    border-top: 3px solid var(--color-grey-002)
 }
